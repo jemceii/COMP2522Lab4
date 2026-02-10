@@ -1,14 +1,18 @@
-package ca.bcit.comp2522.Lab4;
+package ca.bcit.comp2522.lab4;
 
 import java.util.Objects;
 
-public class Person implements Comparable<Person>, Printable, Reversible
+public class Person implements Comparable<Person>,
+                            Printable,
+                            Reversible
 {
     private final Date dateOfBirth;
     private final Date dateOfDeath;
     private final Name name;
 
-    public Person(final Date dateOfBirth, final Date dateOfDeath, final Name name)
+    public Person(final Date dateOfBirth,
+                  final Date dateOfDeath,
+                  final Name name)
     {
         validateDate(dateOfBirth, dateOfDeath);
         this.dateOfBirth = dateOfBirth;
@@ -16,9 +20,8 @@ public class Person implements Comparable<Person>, Printable, Reversible
         this.name = name;
     }
 
-    public static void validateDate(
-        final Date dateOfBirth,
-        final Date dateOfDeath)
+    public static void validateDate(final Date dateOfBirth,
+                                    final Date dateOfDeath)
     {
         if (dateOfBirth == null)
         {
@@ -27,16 +30,19 @@ public class Person implements Comparable<Person>, Printable, Reversible
 
         if (dateOfDeath != null)
         {
+
             if (dateOfDeath.getYear() < dateOfBirth.getYear())
             {
                 throw new IllegalArgumentException("Date of death must be after date of birth!");
             }
+
             else if (dateOfDeath.getYear() == dateOfBirth.getYear())
             {
                 if (dateOfDeath.getMonth() < dateOfBirth.getMonth())
                 {
                     throw new IllegalArgumentException("Date of death must be after date of birth!");
                 }
+
                 else if (dateOfDeath.getMonth() == dateOfBirth.getMonth())
                 {
                     if (dateOfDeath.getDay() <= dateOfBirth.getDay())
@@ -45,6 +51,7 @@ public class Person implements Comparable<Person>, Printable, Reversible
                     }
                 }
             }
+
         }
     }
 
@@ -67,8 +74,15 @@ public class Person implements Comparable<Person>, Printable, Reversible
     @Override
     public boolean equals(final Object obj)
     {
-        if (this == obj) return true;
-        if (obj == null || getClass() != obj.getClass()) return false;
+        if (this == obj)
+        {
+            return true;
+        }
+
+        if (obj == null || getClass() != obj.getClass())
+        {
+            return false;
+        }
 
         final Person other = (Person) obj;
 
@@ -107,7 +121,8 @@ public class Person implements Comparable<Person>, Printable, Reversible
             deathInfo = ", and is still alive";
         }
 
-        System.out.println("Person: " + name.getFullName() + ", " + birthInfo + deathInfo + ".");
+        System.out.println("Person: " + name.getFullName() +
+                ", " + birthInfo + deathInfo + ".");
     }
 
     @Override

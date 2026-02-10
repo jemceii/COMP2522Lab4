@@ -1,4 +1,4 @@
-package ca.bcit.comp2522.Lab4;
+package ca.bcit.comp2522.lab4;
 
 
 /**

@@ -1,4 +1,4 @@
-package ca.bcit.comp2522.Lab4;
+package ca.bcit.comp2522.lab4;
 
 /**
  * The Date class.
@@ -13,7 +13,7 @@ package ca.bcit.comp2522.Lab4;
  * leap‑year adjustments, and month codes.
  *
  * @author Jemsel Jumapit
- * @author Faida
+ * @author Faida Espiritu
  * @version 2026
  */
 public class Date implements Printable
