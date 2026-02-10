@@ -17,7 +17,7 @@ package ca.bcit.comp2522.Lab4;
  *
  * @version 2026
  */
-public class Name
+public class Name implements Printable
 {
     private static final int    MAX_LEN_NAME;
     private static final int    FIRST_CHAR;
@@ -26,7 +26,7 @@ public class Name
 
     static
     {
-        MAX_LEN_NAME = 99;
+        MAX_LEN_NAME = 50;
         FIRST_CHAR   = 0;
     }
 
@@ -159,4 +159,9 @@ public class Name
         }
     }
 
+    @Override
+    public void display()
+    {
+        System.out.println(getFullName());
+    }
 }

@@ -16,7 +16,7 @@ package ca.bcit.comp2522.Lab4;
  * @author Faida
  * @version 2026
  */
-public class Date
+public class Date implements Printable
 {
     // Date Variables
     private static final int SHORT_FEB;
@@ -536,6 +536,15 @@ public class Date
                 );
             }
         }
+    }
+
+    @Override
+    public void display()
+    {
+        System.out.println("Date: Year " + this.yearNumber +
+                           ", Month " + this.monthNumber +
+                           ", Day " + this.dayNumber +
+                           " (" + getYearMonthDay() + ", " + getDayOfTheWeek() + ").");
     }
 }
 
