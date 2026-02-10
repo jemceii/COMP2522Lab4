@@ -1,6 +1,5 @@
 package ca.bcit.comp2522.lab4;
 
-
 /**
  * The Name class.
  * ---------------
@@ -115,7 +114,6 @@ public class Name implements Printable
      *
      * @param first The first name of client
      * @throws IllegalArgumentException If the first name is null, empty or contains the words "admin"
-     *
      */
     private static void validateFirstName(final String first)
     {
@@ -131,7 +129,6 @@ public class Name implements Printable
      *
      * @param last The last name of client
      * @throws IllegalArgumentException If the last name is null, empty or contains the words "admin"
-     *
      */
     private static void validateLastName(final String last)
     {
@@ -147,15 +144,15 @@ public class Name implements Printable
      *
      * @param first The first name of client
      * @param last  The last name of client
-     * @throws IllegalArgumentException If the full name's length exceeds MAX_LEN_NAME (45)
-     *
+     * @throws IllegalArgumentException If the full name's length exceeds MAX_LEN_NAME
      */
     private static void validateFullNameLength(final String first,
                                                final String last)
     {
         if (first.length() + last.length() > MAX_LEN_NAME)
         {
-            throw new IllegalArgumentException("Full name exceeds maximum length: " + first + " " + last);
+            throw new IllegalArgumentException("Full name exceeds " +
+                    MAX_LEN_NAME + "characters: " + first + " " + last);
         }
     }
 

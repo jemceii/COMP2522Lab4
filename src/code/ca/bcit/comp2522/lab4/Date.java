@@ -14,6 +14,7 @@ package ca.bcit.comp2522.lab4;
  *
  * @author Jemsel Jumapit
  * @author Faida Espiritu
+ *
  * @version 2026
  */
 public class Date implements Printable
@@ -291,7 +292,7 @@ public class Date implements Printable
 
     /**
      * Maps the month number to its specific calculation code.
-     * * @param month the month number
+     * @param month the month number
      * @return the integer code for that month
      */
     private int getMonthCode(final int month)
@@ -538,6 +539,9 @@ public class Date implements Printable
         }
     }
 
+    /**
+     * Displays the date as such: year, month, day.
+     */
     @Override
     public void display()
     {
