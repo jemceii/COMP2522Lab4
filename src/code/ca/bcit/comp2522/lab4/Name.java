@@ -12,7 +12,7 @@ package ca.bcit.comp2522.lab4;
  * initials, full name, and reversed name.
  *
  * @author Jemsel Jumapit
- * @author Hazen Yang
+ * @author Faida Espiritu
  *
  * @version 2026
  */
@@ -156,6 +156,9 @@ public class Name implements Printable
         }
     }
 
+    /**
+     * Displays a person's full name.
+     */
     @Override
     public void display()
     {
