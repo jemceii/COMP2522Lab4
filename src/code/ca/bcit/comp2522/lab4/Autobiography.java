@@ -8,6 +8,8 @@ package ca.bcit.comp2522.lab4;
  *
  * @author Faida Espiritu
  * @author Jemsel Jumapit
+ *
+ * @version 2026
  */
 public class Autobiography extends Biography implements Printable
 {
