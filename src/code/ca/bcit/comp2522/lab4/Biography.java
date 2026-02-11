@@ -89,8 +89,13 @@ public class Biography extends Book implements Printable
     @Override
     public void display()
     {
-        super.display();
+        System.out.println("Title: " + getTitle() +
+                "\nYear Published: " + getYearPublished());
 
-        System.out.println("Subject: " + getSubject());
+        System.out.print("Author: ");
+        getAuthor().display();
+
+        System.out.println("Subject: " + getSubject().getFullName());
+        System.out.println();
     }
 }

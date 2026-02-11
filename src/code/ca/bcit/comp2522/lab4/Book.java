@@ -148,7 +148,7 @@ public class Book implements Comparable<Book>,
     public void display()
     {
         System.out.println("\nTitle: " + getTitle() +
-                "\nYear: " + getYearPublished());
+                "\nYear Published: " + getYearPublished());
         System.out.print("Author: ");
         getAuthor().display();
     }

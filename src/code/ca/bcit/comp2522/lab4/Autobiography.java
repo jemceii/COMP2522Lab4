@@ -33,6 +33,11 @@ public class Autobiography extends Biography implements Printable
     @Override
     public void display()
     {
-        super.display();
+        System.out.println("Title: " + getTitle());
+        System.out.println("Year Published: " + getYearPublished());
+        System.out.println("Author: " + getAuthor().getFullName());
+        System.out.println("Subject: " + getAuthor().getFullName());
+        System.out.println();
     }
+
 }

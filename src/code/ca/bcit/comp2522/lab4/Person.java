@@ -84,6 +84,16 @@ public class Person implements Comparable<Person>,
     }
 
     /**
+     * Returns the full name of a Person.
+     *
+     * @return first and last name of Person
+     */
+    public String getFullName()
+    {
+        return name.getFullName();
+    }
+
+    /**
      * Compares two Person objects by age.
      * Older people are considered larger.
      *
