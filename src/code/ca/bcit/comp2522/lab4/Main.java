@@ -98,7 +98,7 @@ public class Main
 
         name2 = new Name("Harper", "Lee");
 
-        author2 = new Author(birth2, death2, name2, "Fiction");
+        author2 = new Author(birth2, death2, name2, "Southern Gothic");
         book2 = new Book("To Kill a Mockingbird", 1960, author2);
 
         book2.display();
@@ -109,7 +109,7 @@ public class Main
 
         name3 = new Name("Jane", "Austen");
 
-        author3 = new Author(birth3, death3, name3, "Dystopian");
+        author3 = new Author(birth3, death3, name3, "Romance");
         book3 = new Book("Pride and Prejudice", 1813, author3);
 
         book3.display();
@@ -120,7 +120,7 @@ public class Main
 
         name4 = new Name("F. Scott", "Fitzgerald");
 
-        author4 = new Author(birth4, death4, name4, "Dystopian");
+        author4 = new Author(birth4, death4, name4, "Modernist");
         book4 = new Book("The Great Gatsby", 1925, author4);
 
         book4.display();
@@ -131,11 +131,11 @@ public class Main
 
         name5 = new Name("Herman", "Melville");
 
-        author5 = new Author(birth5, death5, name5, "Dystopian");
+        author5 = new Author(birth5, death5, name5, "Adventure");
         book5 = new Book("Moby-Dick", 1851, author5);
 
         book5.display();
 
-        System.out.println("Five of the Greatest Books: ");
+        System.out.println("\nFive of the Greatest Books: ");
     }
 }

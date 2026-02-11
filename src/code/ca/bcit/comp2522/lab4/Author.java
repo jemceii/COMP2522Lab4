@@ -74,7 +74,7 @@ public class Author extends Person implements Printable
         // prints Person info first
         super.display();
 
-        System.out.println("Genre: " + getGenre() + ".");
+        System.out.println("Genre: " + getGenre());
     }
 
 
