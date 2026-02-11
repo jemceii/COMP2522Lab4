@@ -2,6 +2,7 @@ package ca.bcit.comp2522.lab4;
 
 /**
  * Represents an autobiography.
+ * .
  * An autobiography is a type of Biography where the subject of the book
  * is the same person as the author.
  *

@@ -2,6 +2,7 @@ package ca.bcit.comp2522.lab4;
 
 /**
  * Represents an author in the bookstore system.
+ * .
  * An Author is a Person with an associated genre.
  *
  * @author Faida Espiritu

@@ -2,6 +2,7 @@ package ca.bcit.comp2522.lab4;
 
 /**
  * Represents a biography book.
+ * .
  * A Biography is a type of Book that focuses on the life of a specific person,
  * referred to as the subject.
  *
