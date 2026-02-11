@@ -98,8 +98,7 @@ public class Person implements Comparable<Person>,
         {
             return o.dateOfBirth.getYear() - this.dateOfBirth.getYear();
         }
-
-        if (this.dateOfBirth.getMonth() != o.dateOfBirth.getMonth())
+        else if (this.dateOfBirth.getMonth() != o.dateOfBirth.getMonth())
         {
             return o.dateOfBirth.getMonth() - this.dateOfBirth.getMonth();
         }
@@ -120,14 +119,14 @@ public class Person implements Comparable<Person>,
         {
             return true;
         }
-
-        if (obj == null || getClass() != obj.getClass())
+        else if (obj == null || getClass() != obj.getClass())
         {
             return false;
         }
 
         final Person other;
         other = (Person) obj;
+
 
         return this.dateOfBirth.equals(other.dateOfBirth) &&
                this.name.equals(other.name) &&
@@ -171,6 +170,7 @@ public class Person implements Comparable<Person>,
         {
             deathInfo = ", and is still alive";
         }
+
 
         System.out.println("Person: " + name.getFullName() +
                 ", " + birthInfo + deathInfo + ".");

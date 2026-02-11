@@ -29,7 +29,9 @@ public class Biography extends Book implements Printable
     {
         super(title, yearPublished, author);
 
+
         validateSubject(subject);
+
 
         this.subject = subject;
     }

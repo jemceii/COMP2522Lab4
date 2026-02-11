@@ -48,6 +48,10 @@ public class Book implements Comparable<Book>,
         this.author = author;
     }
 
+    /**
+     *
+     * @param title
+     */
     private static void validateTitle(final String title)
     {
         if (title == null)
@@ -67,6 +71,10 @@ public class Book implements Comparable<Book>,
         }
     }
 
+    /**
+     *
+     * @param yearPublished
+     */
     private static void validateYearPublished(final int yearPublished)
     {
         if (yearPublished < MINIMUM_YEAR || yearPublished > CURRENT_YEAR)
@@ -76,6 +84,10 @@ public class Book implements Comparable<Book>,
         }
     }
 
+    /**
+     *
+     * @param author
+     */
     private static void validateAuthor(final Author author)
     {
         if (author == null)
