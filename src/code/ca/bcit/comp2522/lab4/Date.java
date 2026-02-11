@@ -101,7 +101,7 @@ public class Date implements Printable
         ONE_DAY         = 1;
         LEAP_YEAR_CYCLE = 4;
 
-        MINIMUM_YEAR = 1800;
+        MINIMUM_YEAR = 1;
         CURRENT_YEAR = 2026;
 
         JANUARY   = 1;
