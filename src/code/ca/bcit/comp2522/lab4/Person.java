@@ -172,8 +172,8 @@ public class Person implements Comparable<Person>,
         }
 
 
-        System.out.println("Person: " + name.getFullName() +
-                ", " + birthInfo + deathInfo + ".");
+        System.out.println(name.getFullName() +
+                ", " + birthInfo + deathInfo);
     }
 
     /**
