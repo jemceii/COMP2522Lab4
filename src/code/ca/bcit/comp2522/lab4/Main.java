@@ -34,6 +34,8 @@ public class Main
         final Name name4;
         final Name name5;
 
+        System.out.println("Five of the Greatest Books: ");
+
         // Book 1
         birth1 = new Date(1903, 6, 25);
         death1 = new Date(1950, 1, 21);
@@ -43,6 +45,52 @@ public class Main
         author1 = new Author(birth1, death1, name1, "Dystopian");
         book1 = new Book("1984", 1949, author1);
 
-        System.out.println(book1);
+        book1.display();
+
+        // Book 2
+        birth2 = new Date(1926, 4, 26);
+        death2 = new Date(2016, 2, 19);
+
+        name2 = new Name("Harper", "Lee");
+
+        author2 = new Author(birth2, death2, name2, "Fiction");
+        book2 = new Book("To Kill a Mockingbird", 1960, author2);
+
+        book2.display();
+
+        // Book 3
+        birth3 = new Date(1775, 12, 16);
+        death3 = new Date(1817, 7, 18);
+
+        name3 = new Name("Jane", "Austen");
+
+        author3 = new Author(birth3, death3, name3, "Dystopian");
+        book3 = new Book("Pride and Prejudice", 1813, author3);
+
+        book3.display();
+
+        // Book 4
+        birth4 = new Date(1896, 9, 24);
+        death4 = new Date(1940, 12, 21);
+
+        name4 = new Name("F. Scott", "Fitzgerald");
+
+        author4 = new Author(birth4, death4, name4, "Dystopian");
+        book4 = new Book("The Great Gatsby", 1925, author4);
+
+        book4.display();
+
+        // Book 5
+        birth5 = new Date(1819, 8, 1);
+        death5 = new Date(1891, 7, 28);
+
+        name5 = new Name("Herman", "Melville");
+
+        author5 = new Author(birth5, death5, name5, "Dystopian");
+        book5 = new Book("Moby-Dick", 1851, author5);
+
+        book5.display();
+
+        System.out.println("Five of the Greatest Books: ");
     }
 }
