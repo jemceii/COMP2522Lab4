@@ -2,7 +2,7 @@ package ca.bcit.comp2522.lab4;
 
 /**
  * Represents an object whose data can be reversed.
- * <p>
+ * -
  * Classes that implement this interface must provide a
  * reversed version of their content.
  *
